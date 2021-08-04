@@ -105,7 +105,7 @@ const App = () => {
         <div className="col text-center p-5">
           __ React Redux EC
           <LoadingOutlined />
-          MMERCE __
+          MMERCE...
         </div>
       }
     >
@@ -118,9 +118,11 @@ const App = () => {
         <Route exact path="/register" component={Register} />
         <Route exact path="/register/complete" component={RegisterComplete} />
         <Route exact path="/forgot/password" component={ForgotPassword} />
+
         <UserRoute exact path="/user/history" component={History} />
         <UserRoute exact path="/user/password" component={Password} />
         <UserRoute exact path="/user/wishlist" component={Wishlist} />
+
         <AdminRoute exact path="/admin/dashboard" component={AdminDashboard} />
         <AdminRoute exact path="/admin/category" component={CategoryCreate} />
         <AdminRoute exact path="/admin/category/:slug" component={CategoryUpdate} />
@@ -129,13 +131,17 @@ const App = () => {
         <AdminRoute exact path="/admin/product" component={ProductCreate} />
         <AdminRoute exact path="/admin/products" component={AllProducts} />
         <AdminRoute exact path="/admin/product/:slug" component={ProductUpdate} />
+
         <Route exact path="/product/:slug" component={Product} />
         <Route exact path="/category/:slug" component={CategoryHome} />
         <Route exact path="/sub/:slug" component={SubHome} />
         <Route exact path="/shop" component={Shop} />
         <Route exact path="/cart" component={Cart} />
+
         <UserRoute exact path="/checkout" component={Checkout} />
+
         <AdminRoute exact path="/admin/coupon" component={CreateCouponPage} />
+        
         <UserRoute exact path="/payment" component={Payment} />
         
       </Switch>
